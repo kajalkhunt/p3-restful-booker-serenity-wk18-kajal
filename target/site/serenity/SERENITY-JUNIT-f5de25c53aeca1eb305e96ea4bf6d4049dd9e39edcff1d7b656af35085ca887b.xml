@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="4" failures="0" name="com.restful.booker.testsuite.BookingCURDTestWithSteps" skipped="0" tests="6" time="8.68" timestamp="2023-01-03T23:33:37.140Z[Europe/London]"><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="This will create a booking"/><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="Verify if the user was added to the application"/><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="This will update a booking"><error message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;403&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+</error><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restful.booker.restfulinfo.BookingSteps.updateBooking(BookingSteps.java:65)&#13;
+com.restful.booker.testsuite.BookingCURDTestWithSteps.test003(BookingCURDTestWithSteps.java:66)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="This will update a partial booking "><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.restful.booker.testsuite.BookingCURDTestWithSteps.test004(BookingCURDTestWithSteps.java:81)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="Verify if the booking  was updated partially"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.restful.booker.testsuite.BookingCURDTestWithSteps.test005(BookingCURDTestWithSteps.java:90)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.testsuite.BookingCURDTestWithSteps" name="This will delete booking and verify booking is deleted"><error message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;403&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;403&gt;.
+</error><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;403&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restful.booker.restfulinfo.BookingSteps.deleteBookingData(BookingSteps.java:77)&#13;
+com.restful.booker.testsuite.BookingCURDTestWithSteps.test006(BookingCURDTestWithSteps.java:97)&#13;
+</system-err></testcase></testsuite>
