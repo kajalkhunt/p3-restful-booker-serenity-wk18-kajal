@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>This will create Auth Token</title>
+    <title>This will delete booking and verify booking is deleted</title>
     <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > This will create Auth Token
+            > This will delete booking and verify booking is deleted
         </span>
         </div>
         <div class="rightbg"></div>
@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-01-2023 20:00</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-01-2023 20:04</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -73,7 +73,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Auth CURD Test With Steps</span>
+                                    <span class="story-header-title">Booking CURD Test With Steps</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
@@ -94,7 +94,7 @@
                             <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
                                     <span class="success-color">
-                                    This Will Create Auth Token
+                                    This Will Delete Booking And Verify Booking Is Deleted
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -140,13 +140,13 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">Creating auth token with username:admin,password:password123</span>
+                            <span class="top-level-step">This will delete booking by ID</span>
                             </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">3.56s</span></td>
+                    <td width="100"><span class="top-level-step">0.49s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -160,7 +160,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">POST https://restful-booker.herokuapp.com/auth</span>
+                            <span class="nested-group-step">DELETE https://restful-booker.herokuapp.com/booking/2482</span>
 
                                 <span class="rest-query">
                 <span>
@@ -179,23 +179,115 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="restModalLabel">
-                                POST https://restful-booker.herokuapp.com/auth
+                                DELETE https://restful-booker.herokuapp.com/booking/2482
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                    <p>Status code: 200</p>
+                                    <p>Status code: 201</p>
                                     <p>Content Type: application/json</p>
                                     <h5>Request Headers</h5>
-                                    <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <pre>Accept=application/json<br>Cookie=token=1c42e7f751aa32b<br>Content-Type=application/json; charset=UTF-8</pre>
                                     <h5>Content Body</h5>
-                                    <pre>{<br>    &quot;username&quot;: &quot;admin&quot;,<br>    &quot;password&quot;: &quot;password123&quot;<br>}</pre>
+                                    <pre></pre>
                                     <h5>Request Cookies</h5>
                                     <pre></pre>
                                     <h5>Response Headers</h5>
-                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 27<br>Etag: W/&quot;1b-LjFsFGZNOPq2rq5P1MJzROCRuf8&quot;<br>Date: Thu, 05 Jan 2023 20:01:05 GMT<br>Via: 1.1 vegur</pre>
+                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: text/plain; charset=utf-8<br>Content-Length: 7<br>Etag: W/&quot;7-rM9AyJuqT6iOan/xHh+AW+7K/T8&quot;<br>Date: Thu, 05 Jan 2023 20:04:22 GMT<br>Via: 1.1 vegur</pre>
                                 <h5>Response Body</h5>
                                     <pre>
-                                        {<br>    &quot;token&quot;: &quot;3df9d90147d2c9d&quot;<br>}
+                                        Created
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">Getting the booking information with firstname: 2482</span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.48s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">GET https://restful-booker.herokuapp.com/booking/2482</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-4">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-4" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                GET https://restful-booker.herokuapp.com/booking/2482
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 404</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Accept=application/json<br>Cookie=token=1c42e7f751aa32b<br>Connection=keep-alive<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre></pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: text/plain; charset=utf-8<br>Content-Length: 9<br>Etag: W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;<br>Date: Thu, 05 Jan 2023 20:04:23 GMT<br>Via: 1.1 vegur</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        Not Found
                                     </pre>
                                     <h5>Response Cookies</h5>
                                     <pre></pre>
@@ -222,7 +314,7 @@
                 <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>3.71s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.97s</em></span></td>
                 </tr>
 
             </table>

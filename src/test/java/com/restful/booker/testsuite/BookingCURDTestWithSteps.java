@@ -1,7 +1,6 @@
 package com.restful.booker.testsuite;
 
 import com.restful.booker.restfulinfo.BookingSteps;
-import com.restful.booker.restfulinfo.PartialUpdateSteps;
 import com.restful.booker.testbase.TestBase;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.junit.runners.SerenityRunner;
@@ -14,41 +13,49 @@ import java.util.HashMap;
 
 @RunWith(SerenityRunner.class)
 public class BookingCURDTestWithSteps extends TestBase {
-
+    static String userName = "admin";
+    static String password = "password123";
     static String firstname = "Raja";
-    static String lastname = "RamSita";
+    static String lastname = "Ram";
     static int totalprice = 288;
     static boolean depositpaid = true;
-    //    static Object checkin =  2023-01-02;
-//    static Object checkout =  2023-01-31;
-    static HashMap<Object, Object> bookingdates;
+
     static String additionalneeds = "Breakfast";
     static int bookingID;
+    static String token;
+
 
     @Steps
     BookingSteps bookingSteps;
-    PartialUpdateSteps partialUpdateSteps;
-
+    @Title("create token")
+    @Test
+    public void test001() {
+        ValidatableResponse response = bookingSteps.createTokenId(userName, password);
+        response.log().all().statusCode(200);
+        token = response.extract().path("token");
+        System.out.println("this is for viewing : " + token);
+    }
 
     @Title("This will create a booking")
     @Test
-    public void test001() {
+    public void test002() {
 
         HashMap<Object, Object> bookingDatesMap = new HashMap<>();
         bookingDatesMap.put("checkin", "2023-01-01");
-        bookingDatesMap.put("checkout", "2024-01-01");
+        bookingDatesMap.put("checkout", "2023-02-01");
 
         ValidatableResponse response = bookingSteps.createBooking(firstname, lastname, totalprice, depositpaid, bookingDatesMap, additionalneeds);
         response.log().all().statusCode(200);
         bookingID = response.extract().path("bookingid");
         System.out.println(bookingID);
 
+
     }
 
     @Title("Verify if the user was added to the application")
 
     @Test
-    public void test002() {
+    public void test003() {
         ValidatableResponse response = bookingSteps.getBookingInforByID(bookingID);
         response.log().all().statusCode(200);
 
@@ -56,29 +63,24 @@ public class BookingCURDTestWithSteps extends TestBase {
 
     @Title("This will update a booking")
     @Test
-    public void test003() {
+    public void test004() {
         firstname = firstname + "_updated";
 
         HashMap<Object, Object> bookingDatesMap = new HashMap<>();
         bookingDatesMap.put("checkin", "2023-01-01");
         bookingDatesMap.put("checkout", "2024-01-01");
 
-        ValidatableResponse response = bookingSteps.updateBooking(bookingID, firstname, lastname, totalprice, depositpaid, bookingDatesMap, additionalneeds);
+        ValidatableResponse response = bookingSteps.updateBooking(bookingID, token, firstname, lastname, totalprice, depositpaid, bookingDatesMap, additionalneeds);
         response.log().all().statusCode(200);
 
     }
 
     @Title("This will update a partial booking ")
     @Test
-    public void test004() {
-        firstname = firstname + "_updated";
+    public void test005() {
         lastname = lastname + "_updated";
 
-        HashMap<Object, Object> bookingDatesMap = new HashMap<>();
-        bookingDatesMap.put("checkin", "2023-01-01");
-        bookingDatesMap.put("checkout", "2024-01-01");
-
-        ValidatableResponse response = partialUpdateSteps.partialUpdateBooking(bookingID, firstname, lastname);
+        ValidatableResponse response = bookingSteps.partialUpdateBooking(bookingID, token, lastname);
         response.log().all().statusCode(200);
 
     }
@@ -86,16 +88,16 @@ public class BookingCURDTestWithSteps extends TestBase {
     @Title("Verify if the booking  was updated partially")
 
     @Test
-    public void test005() {
-         partialUpdateSteps.getBookingInforByID(bookingID).statusCode(200);
+    public void test006() {
+         bookingSteps.getBookingInforByID(bookingID, token).statusCode(200);
     }
 
     @Title("This will delete booking and verify booking is deleted")
 
     @Test
-    public void test006() {
-        bookingSteps.deleteBookingData(bookingID).statusCode(200);
-        bookingSteps.getBookingInforByIDAfterDeletion(bookingID).statusCode(404);
+    public void test007() {
+        bookingSteps.deleteBookingData(bookingID,token).statusCode(201);
+        bookingSteps.getBookingInforByIDAfterDeletion(bookingID,token).statusCode(404);
 
     }
 

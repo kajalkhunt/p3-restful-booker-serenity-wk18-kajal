@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>This will update a partial booking </title>
+    <title>This will update a booking</title>
     <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > This will update a partial booking
+            > This will update a booking
         </span>
         </div>
         <div class="rightbg"></div>
@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-01-2023 23:33</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-01-2023 20:04</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -91,10 +91,11 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                    <span class="error-color">
-                                    This Will Update A Partial Booking
+                                    <span class="success-color">
+                                    This Will Update A Booking
+                                        <span class="related-issue-title"></span>
                                 </span>
                             </span>
                         </td>
@@ -126,47 +127,79 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
-                    <td width="40"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
-                    <td width="%" colspan="1">
-                    <span class="top-level-step">An error occurred outside of step execution.</span>
-                </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                            <span class="top-level-step">Update the user information and verify the updated information</span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.51s</span></td>
                 </tr>
-                <tr class="test-ERROR">
-                    <td width="40">&nbsp</td>
-                    <td width="%" colspan="3">
-                        <span class="error-message"
-                              title="">
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
                         
-                            </span>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-overall">
-                        View stack trace
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">PUT https://restful-booker.herokuapp.com/booking/2482</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-2">
+                        REST Query
                     </button>
-                </div>
+                </span>
                 <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                <div class="modal fade" id="restModal-2" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
+                                <h4 class="modal-title" id="restModalLabel">
+                                PUT https://restful-booker.herokuapp.com/booking/2482
                                 </h4>
                             </div>
                             <div class="modal-body">
-
-                                com.restful.booker.testsuite.BookingCURDTestWithSteps.test004(BookingCURDTestWithSteps.java
-                                    :81) <br>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Accept=application/json<br>Cookie=token=1c42e7f751aa32b<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;firstname&quot;: &quot;Raja_updated&quot;,<br>    &quot;lastname&quot;: &quot;Ram&quot;,<br>    &quot;totalprice&quot;: 288,<br>    &quot;depositpaid&quot;: true,<br>    &quot;bookingdates&quot;: {<br>        &quot;checkin&quot;: &quot;2023-01-01&quot;,<br>        &quot;checkout&quot;: &quot;2024-01-01&quot;<br>    },<br>    &quot;additionalneeds&quot;: &quot;Breakfast&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 175<br>Etag: W/&quot;af-8EHHi9mfo/maEQBxlXrconQskjc&quot;<br>Date: Thu, 05 Jan 2023 20:04:21 GMT<br>Via: 1.1 vegur</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;firstname&quot;: &quot;Raja_updated&quot;,<br>    &quot;lastname&quot;: &quot;Ram&quot;,<br>    &quot;totalprice&quot;: 288,<br>    &quot;depositpaid&quot;: true,<br>    &quot;bookingdates&quot;: {<br>        &quot;checkin&quot;: &quot;2023-01-01&quot;,<br>        &quot;checkout&quot;: &quot;2024-01-01&quot;<br>    },<br>    &quot;additionalneeds&quot;: &quot;Breakfast&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
                             </div>
-
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
                                     Close
@@ -175,12 +208,21 @@
                         </div>
                     </div>
                 </div>
-                </td>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.01s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.51s</em></span></td>
                 </tr>
 
             </table>

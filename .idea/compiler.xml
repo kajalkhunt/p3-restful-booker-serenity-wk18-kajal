@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="p3-restful-booker-serenity-wk18-kajal" />
+        <module name="p3-sw8-restful-booker-serenity-project-harshit-patel" />
       </profile>
     </annotationProcessing>
   </component>

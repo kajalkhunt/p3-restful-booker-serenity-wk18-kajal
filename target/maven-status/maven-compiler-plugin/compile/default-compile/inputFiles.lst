@@ -1,10 +1,9 @@
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\constants\EndPoints.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\restfulinfo\AuthSteps.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\AuthPojo.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\PartialUpdatePojo.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\restfulinfo\PartialUpdateSteps.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\restfulinfo\BookingSteps.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\constants\Path.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\BookingPojo.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\utils\PropertyReader.java
-C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\utils\TestUtils.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\AuthPojo.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\constants\EndPoints.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\utils\PropertyReader.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\utils\TestUtils.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\restfulinfo\AuthSteps.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\BookingPojo.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\restfulinfo\BookingSteps.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\model\PartialUpdatePojo.java
+C:\Users\Rx_bh\Desktop\Kajal ST\Weekly Manuals\Week 18\Week18 Homework\p3-restful-booker-serenity-wk18-kajal\src\main\java\com\restful\booker\constants\Path.java

@@ -1,4 +1,3 @@
-com\restful\booker\restfulinfo\PartialUpdateSteps.class
 com\restful\booker\model\BookingPojo.class
 com\restful\booker\model\PartialUpdatePojo.class
 com\restful\booker\restfulinfo\AuthSteps.class
